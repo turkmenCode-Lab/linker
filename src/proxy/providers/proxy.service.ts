@@ -1,4 +1,5 @@
-import { Protocol, XRayConfig, XRayConverter } from '@/xray';
+import { XRayConverter } from '../../xray/core/xray.converter';
+import { XRayConfig, Protocol } from '../../xray/types/index';
 import { Injectable, BadRequestException } from '@nestjs/common';
 
 @Injectable()
