@@ -5,9 +5,8 @@ import { AuthModule } from './auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
 import * as Joi from 'joi';
 import { DataBaseModule } from './configs/db.config';
-import { ProxyController } from './proxy/proxy.controller';
-import { ProxyService } from './proxy/providers/proxy.service';
 import { ProxyModule } from './proxy/proxy.module';
+import { HistoryModule } from './history/history.module';
 
 @Module({
   imports: [
@@ -22,6 +21,7 @@ import { ProxyModule } from './proxy/proxy.module';
     DataBaseModule,
     AuthModule,
     ProxyModule,
+    HistoryModule,
   ],
   controllers: [AppController],
   providers: [AppService],
